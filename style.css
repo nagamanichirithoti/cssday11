@@ -1,0 +1,119 @@
+
+.parent{
+    background-color: #331bd1;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.child{
+    display: flex;
+    gap: 15px;
+}
+.input_checkbox{
+    display: none;
+}
+.ham_icon{
+    display: none;
+}
+@media screen and (max-width:400px){
+    *{
+        box-sizing: border-box;
+    }
+    .parent{
+        display: flex;
+        position: relative;
+        padding: 10px;
+    }
+    .child{
+        position: absolute;
+        display: none;
+        gap: 10px;
+        align-items: center;
+        top: 70px;
+        left: 0px;
+        color: white;
+        width: 100%;
+        background-color:#c54e93;
+    }
+    .ham_icon{
+        display: block;
+    }
+    .ham_icon:hover{
+        cursor: pointer;
+    }
+    .input_checkbox:checked +.child{
+        display:flex;
+        flex-direction: column;
+     }   
+   
+}
+
+@media screen and (min-width:401px) and (max-width:780px){
+    
+    .parent{
+        display: flex;
+        position: relative;
+        padding: 10px;
+    }
+    .child{
+        position: absolute;
+        display: none;
+        gap: 10px;
+        align-items: center;
+        top: 70px;
+        left: 0px;
+        color: white;
+        width: 100%;
+        background-color:#c54e93;
+    }
+    .ham_icon{
+        display:block;
+    }
+    .ham_icon:hover{
+        cursor: pointer;
+        
+    }
+    .input_checkbox:checked + .child{
+        display:flex;
+        flex-direction: column;
+     } 
+    
+    }
+    @media screen and (min-width:781px) and (max-width:1080px){
+        .parent{
+            padding: 10px;
+            justify-content: space-around;
+            gap: 50px;
+            font-size: 1.3rem;
+        }
+        .child-2
+        {
+            align-items: center;
+            font-size: 30px;
+        }
+    }
+    @media screen and (min-width:1081px) and (max-width:1440px){
+        .parent{
+            padding: 10px;
+            justify-content: space-around;
+            gap: 50px;
+            font-size: 1.5rem;
+        }
+        .child-2
+        {
+            align-items: center;
+        }
+    }
+    @media screen and (min-width:1441px){
+        .parent{
+            padding: 10px;
+            justify-content: space-around;
+            gap: 50px;
+            font-size: 2.2rem;
+        }
+        .child-2
+        {
+            align-items: center;
+        }
+    }
